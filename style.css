@@ -26,9 +26,10 @@ link {
 
 #bottom {
     box-sizing: border-box;
-    width: 5in;
+    width: viewport;
     height: 1in;
     background-color: blue;
+    margin-top: 6in;
 }
 
 #reference-bar {
