@@ -29,6 +29,7 @@ link {
     width: viewport;
     height: 1in;
     background-color: blue;
+    float: bottom;
 }
 
 #reference-bar {
