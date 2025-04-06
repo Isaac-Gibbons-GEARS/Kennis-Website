@@ -24,11 +24,10 @@ link {
     background-color: red;
 }
 
-#vertical {
-    float: right;
+#bottom {
     box-sizing: border-box;
-    width: 1in;
-    height: 10in;
+    width: viewport;
+    height: 1in;
     background-color: blue;
 }
 
