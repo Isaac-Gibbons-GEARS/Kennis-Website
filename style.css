@@ -6,12 +6,12 @@ body {
     padding: 10;
 }
 
-img {
+.img {
     width: 10in;
     align-items: center;
 }
 
-link {
+.link {
     margin-top: 1in;
     margin-left: 5in;
     margin-right: 5in;
@@ -24,7 +24,7 @@ link {
     background-color: red;
 }
 
-bottom {
+.bottom {
     box-sizing: border-box;
     width: viewport;
     height: 1in;
