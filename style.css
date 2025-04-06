@@ -25,11 +25,12 @@ link {
 }
 
 #bottom {
-    box-sizing: border-box;
+     box-sizing: border-box;
     width: viewport;
     height: 1in;
     background-color: blue;
-    float: bottom;
+    container: flex;
+    align-items: flex-end;
 }
 
 #reference-bar {
