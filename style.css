@@ -24,7 +24,7 @@ link {
     background-color: red;
 }
 
-#bottom {
+bottom {
     box-sizing: border-box;
     width: viewport;
     height: 1in;
