@@ -25,12 +25,10 @@ link {
 }
 
 #bottom {
-     box-sizing: border-box;
-    width: viewport;
+    box-sizing: border-box;
+    width: 5in;
     height: 1in;
     background-color: blue;
-    container: flex;
-    align-items: flex-end;
 }
 
 #reference-bar {
