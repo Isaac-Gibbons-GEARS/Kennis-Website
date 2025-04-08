@@ -29,7 +29,9 @@ body {
     width: viewport;
     height: 1in;
     background-color: red;
-    margin-top: 6in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #reference-bar {
@@ -53,14 +55,19 @@ body {
 li {
     display: inline-block;
     padding: 10px;
-    color: rgba(255, 255, 255, 0);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     text-align: right;
-    background-color: rgb(242, 242, 248);
+    background-color: rgb(255, 0, 0);
     border-radius: 5px;
     margin: 5px;
+    cursor: pointer;
+}
+
+li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -70,4 +77,12 @@ li {
     font-weight: 600;
     font-size: 35px;
     color: rgb(255, 255, 255);
+}
+
+#back {
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    color: black;
 }
