@@ -6,10 +6,6 @@ body {
     padding: 10;
 }
 
-.img {
-    width: 10in;
-    align-items: center;
-}
 
 .link {
     margin-top: 1in;
@@ -26,12 +22,13 @@ body {
 
 .bottom {
     box-sizing: border-box;
-    width: viewport;
+    width: var(viewport);
     height: 1in;
     background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5in;
 }
 
 #reference-bar {
@@ -85,4 +82,28 @@ li a {
     font-weight: 100;
     font-size: 20px;
     color: black;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#factbox {
+    box-sizing: border-box;
+    width: 6in;
+    height: 2in;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#fact {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
 }
