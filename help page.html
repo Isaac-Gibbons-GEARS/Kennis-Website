@@ -1,29 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Help Page</title>
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,user-scalable=no"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="body">
-    <nav id="navbar">
-      <div>
-        <a href="index.html" id="logo">Home</a>
-      </div>
-      <ul class="nav">
-        <li><a href="help page.html">Help page</a></li>
-        <li><a href="conveinentpage.html">convienent page</a></li>
-      </ul>
-    </nav>
-    <p>Welcome to the Help page.</p>
-    <p>Every week there will be a new tutorial on a semi-random subject.</p>
+
+<head>
+  <title>Help Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body">
+  <nav id="navbar">
     <div>
-      <div class="bottom">
-        <i id="back">This website will continue to update, so keep visiting</i>
-      </div>
+      <a href="index.html" id="logo">Home</a>
     </div>
-  </body>
+    <ul class="nav">
+      <li><a href="help page.html">second page</a></li>
+      <li><a href="conveinentpage.html">convienent page</a></li>
+    </ul>
+  </nav>
+  <p class="paragraphs">Welcome to the second page.</p>
+  <p class="paragraphs">
+    Every week there will be a new tutorial on a semi-random subject.
+  </p>
+  <p class="paragraphs">
+    This week is a tutorial on how to make a website using HTML and CSS. First
+    things first. You'll need to download a text editor. I recommend Visual
+    Studio Code, but you can use any text editor you want. I tried using
+    Windows Notepad, but had trouble doing the CSS. Once you have a text
+    editor, create a new folder in the File explorer. You should probably name
+    it something like "html" or "website", but whatever suits your fancy is
+    fine. Once you have done this, go to Visual Studios Code and click the
+    "new file" button. It will then ask you to name the file in the bar at the
+    top. <img src="images/file name.png" class="img" />
+  </p>
+  <p class="paragraphs">
+    Upon hitting enter after typing the file name, it will ask you to save
+    your new file.
+  </p>
+  <p class="paragraphs">
+    <img src="images/file save.png" class="img" /> Save it as "Index.html",
+    and put it in your new folder.This will be the main page of your website.
+    Next, you'll need to create a new file and save it as "style.css". This
+    will be the stylesheet for your website. Now, open the "index.html" file
+    in your text editor and type in an exclamation mark, then hit enter. This
+    will create a basic template for your website. next we'll show you how to
+    customize it.
+  </p>
+  <p class="paragraphs">
+    The first thing you'll want to do is change the title of your website. To
+    do this, look for the line that says
+    "&lt;title&gt;Document&lt;/title&gt;". Change "Document" to whatever you
+    want your website to be called. This is what appears in the tab, like the
+    "Help page" on this page's tab. Next, you'll want to change the body of
+    your website. Look for the line that says &lt;body&gt;&lt;/body&gt;. This
+    is where you'll put all the content of your website. You can put anything
+    you want in here, but for now, let's just put a heading and a paragraph.
+    To create a heading, type "&lt;h1&gt;My Website&lt;/h1&gt;". This will
+    create a heading that says "My Website". To create a paragraph, type
+    "&lt;p&gt;This is my website.&lt;/p&gt;". This will create a paragraph
+    that says "This is my website". Now, let's add some style to our website.
+    The first thing you'll need to do is link the stylesheet to the HTML.
+    in between the &lt;head&gt;&lt;/head&gt; tags, add the following
+    line: &lt;link rel="stylesheet" href="style.css"&gt;.
+    This will link the stylesheet to the HTML. This will only work if your file is in the same folder as the HTML file.
+    For instance, if your HTML file is in a folder called "website", and your CSS file is in a folder called "css", you
+    would type href="css/style.css".
+    If this doesn't work, try moving the CSS file to the same folder as the HTML file or using the master url.
+    Example: If the html was in the html folder and the stylesheet was in the css folder in vs code,
+    and they were both in the website folder, you would type href=website/css/style.css.
+    Now, open the "style.css" file and type in the following code:
+    body { <br>background-color: lightblue;</br> }
+    This will change the background color of your website to light blue.
+    You can also add color: ; and then type in the name of whatever color comes to mind in between the colon and
+    semicolon.
+    This will change the color of the text in the body.
+    You'll notice that VS Code has suggestions for you. If you want to see the suggestions,
+    just hit enter if it's what you want. These suggestions can be helpful for elaborating on your code.
+    For instance, if you type in "body" and then hit enter, it will automatically add the curly braces for you.
+    Or another example, when you start to type in the word color, you'll see all kinds of suggestions for specific
+    coloring of items, like the background-color, or the color of the text.
+  </p>
+  <p>
+    You can specify which html elements you want to change with css using one of 4 methods: 1. The id tag. This tag only applies to elements of this id. For instance,
+    if I added a second paragraph, I could add the id="p1" tag to the first paragraph and the id="p2" tag to the second paragraph,
+    and they would look like this: &lt;p id="p1"&gt;This is the first paragraph.&lt;/p&gt; and &lt;p id="p2"&gt;This is the second paragraph.&lt;/p&gt;.
+    Then, in the css, I could type in #p1 { <br>color: red;</br> } and it would only change the color of the first paragraph.
+    2. The class tag. This tag applies to all elements of this class. For instance, if I added a class="p" tag to both paragraphs,
+    I could type in .p { <br>color: red;</br> } and it would change the color of both paragraphs.
+    3. The element tag. This tag applies to all elements of this type. Example: if I simply wanted to make all paragraph elements red,
+    I would simply type in p { <br>color: red;</br> }. You can also use this to reference all of a specific elements inside of all of another specific element.
+    For example, if I only wanted the h1 elements inside of only the body element to be red, I would type in body h1 { <br>color: red;</br> }.
+    4. The universal tag. This tag applies to all elements. Example: if I wanted to make all elements red, I would type in * { <br>color: red;</br> }.
+    This is the most powerful method, but also the most dangerous, as it can cause unintended consequences. These identifiers are always put in the first tag of an element,
+    and are always put between the &lt;(item name) and &gt; tag.
+  </p>
+  <p>
+    This concludes this week's tutorial. You can use your newfound knowledge to make your own website, and make it as big and elaborate as you can.
+    come back next monday for instructions on how to make your website even better, with navigation bars, buttons, pictures, borders, and more.
+  </p>
+  <div>
+    <div class="bottom">
+      <i id="back">This website will continue to update, so keep visiting</i>
+    </div>
+  </div>
+</body>
+
 </html>
