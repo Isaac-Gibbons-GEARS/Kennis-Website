@@ -44,6 +44,10 @@ body {
   margin-top: 1in;
 }
 
+#content {
+  flex: 1;
+}
+
 #reference-bar {
   box-sizing: border-box;
   width: var(viewport);
