@@ -1,28 +1,28 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(0, 100, 175);
+  background-image: linear-gradient(
+    rgb(12, 223, 231),
+    white,
+    rgb(12, 223, 231)
+  );
   color: black;
-  align-items: center;
   padding: 10;
-  border: rgb(0, 50, 175);
+  border: rgb(0, 136, 255);
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
 }
 
 .img {
-  width: 6in;
+  width: 9in;
   height: auto;
 }
 
-.link {
-  margin-top: 1in;
-  margin-left: 5in;
-  margin-right: 5in;
-}
-
-#circle {
-  box-sizing: border-box;
-  height: 1in;
-  width: var(viewport);
-  background-color: red;
+.imgtype2 {
+  width: auto;
+  height: auto;
 }
 
 .paragraphs {
@@ -33,61 +33,58 @@ body {
   font-weight: bold;
 }
 
-.bottom {
-  box-sizing: border-box;
-  width: var(viewport);
-  height: 1in;
-  background-color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1in;
-}
-
 #wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #content {
   flex: 1;
 }
 
-#reference-bar {
-  box-sizing: border-box;
-  width: var(viewport);
-  height: 0.75in;
-  background-color: blue;
-}
-
-#navbar {
-  text-decoration: none;
+.bottom {
   box-sizing: border-box;
   width: var(viewport);
   height: 1in;
-  background-color: rgb(255, 0, 0);
+  background-image: linear-gradient(to right, white, teal, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1in;
+}
+
+#navbar {
+  box-sizing: border-box;
+  width: var(viewport);
+  height: 1in;
+  background-image: linear-gradient(to right, white, teal, white);
   align-items: center;
   list-style: none;
   display: flex;
 }
-li {
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+  }
+}
+
+.linkbox {
   display: inline-block;
   padding: 10px;
-  text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  text-align: right;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   margin: 5px;
   cursor: pointer;
 }
 
-li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
+.linkanchor {
+  color: rgb(79, 152, 247);
   cursor: pointer;
+  text-decoration: none;
 }
 
 #logo {
@@ -95,12 +92,11 @@ li a {
   margin-left: 20px;
   font-weight: 600;
   font-size: 35px;
-  color: rgb(255, 255, 255);
+  color: rgb(79, 152, 247);
 }
 
 #back {
   text-decoration: none;
-  margin-left: 20px;
   font-weight: 100;
   font-size: 20px;
   color: black;
@@ -116,7 +112,7 @@ li a {
   box-sizing: border-box;
   width: 6in;
   height: 2in;
-  background-color: rgb(0, 136, 255);
+  background-image: radial-gradient(white, rgb(70, 152, 180));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,4 +124,5 @@ li a {
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
+  cursor: help;
 }
