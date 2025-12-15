@@ -64,12 +64,6 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
-  #navbar {
-    flex-direction: column;
-  }
-}
-
 .linkbox {
   display: inline-block;
   padding: 10px;
