@@ -139,3 +139,17 @@ body {
     background-color: red;
     border: solid black 2px;
 }
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+    }
+    .paragraphs {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #attention {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
